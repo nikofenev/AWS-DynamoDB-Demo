@@ -14,7 +14,7 @@ Creates table, populates table, query table and inserts new item in the table. F
 
 
 
-###### 1. Create AWS Credentials (in order to use DynamoDB, aws credentials are required).
+##### 1. Create AWS Credentials (in order to use DynamoDB, aws credentials are required).
   - Log in to your aws account console.
   - In the search bar type IAM (Manage User Access and Encryption Keys)
   - Select "Users" from the left navigation tab.
@@ -24,7 +24,7 @@ Creates table, populates table, query table and inserts new item in the table. F
   - When user is created you will have the option to Download .csv file. 
   - Save the file to your home directory (MacOS /Users/<YOUR_USERNAME>/credentials)
 
-######  2. Configure AWS Credentials 
+##### 2. Configure AWS Credentials 
   - Open the "credentials" with text editor.
   - And format it to look like this: 
 ```
@@ -41,7 +41,7 @@ aws_secret_access_key = <YOUR_SECRET_ACCESS_KEY>
   
   - the lines above will create the credentials file in ".aws" directory.
 
-######  3. Create new IntelliJ Project
+#####  3. Create new IntelliJ Project
   - in this demo I use org.apache.maven.archetype.webapp
   - Open your pom.xml file and add the following dependencies:
   ```
@@ -70,7 +70,7 @@ aws_secret_access_key = <YOUR_SECRET_ACCESS_KEY>
      <artifactId>aws-java-sdk-dynamodb</artifactId>
    </dependency>
    ```
-######  4. Open terminal.
+#####  4. Open terminal.
   - Navigate to your DynamoDB_local_latest directory (see Prerequisites).
   - Type in the following command: 
   ```
@@ -89,24 +89,24 @@ aws_secret_access_key = <YOUR_SECRET_ACCESS_KEY>
   ```
   - Leave it open and go back to your intelliJ project
 
-######  5. In your intelliJ project click on MavenProject Lifecycle package.
-######  6. In your intelliJ project click on MavenProject Lifecycle install.
+#####  5. In your intelliJ project click on MavenProject Lifecycle package.
+#####  6. In your intelliJ project click on MavenProject Lifecycle install.
 
 
 
-######  7. Download and run the class MoviesCreateTable class [link](src/main/java/edu/MoviesCreateTable.java)
+##### 7. Download and run the class MoviesCreateTable class [link](src/main/java/edu/MoviesCreateTable.java)
   - This class will create the Movies Table.
   
 
-###### 8. Download and the class MoviesLoadData class [link](src/main/java/edu/MoviesLoadData.java)
+#####  8. Download and the class MoviesLoadData class [link](src/main/java/edu/MoviesLoadData.java)
   - This class will populate the data with the moviesdata.json bellow
   - Download moviesdata.json file [link](src/main/resources/moviedata.json)
 
 
-######  10. Download and run MoviesQuery class [link](src/main/java/edu/MoviesQuery.java)
+#####  10. Download and run MoviesQuery class [link](src/main/java/edu/MoviesQuery.java)
   - This class will query the data
   
-######  11. Download and run MoviesItemOps01 class [link](src/main/java/edu/MoviesItemOps01.java)
+#####  11. Download and run MoviesItemOps01 class [link](src/main/java/edu/MoviesItemOps01.java)
   - This class will add new item to the Movies table.
   
 ===========================================================================
