@@ -3,8 +3,8 @@
 Demo how to run AWS DynamoDB locally with Java.
 
 Prerequisites:
-AWS Account
-DynamoDB [Download link](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html)
+a AWS Account
+b DynamoDB [Download link](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html)
 
 1. Create AWS Credentials (in order to use DynamoDB, aws credentials are required).
 Log in to yout aws account console.
