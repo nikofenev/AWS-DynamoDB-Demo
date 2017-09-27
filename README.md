@@ -98,9 +98,7 @@ aws_secret_access_key = <YOUR_SECRET_ACCESS_KEY>
 
 8. Download and run the class MoviesLoadData class [link](src/main/java/edu/MoviesLoadData.java)
   - This class will populate the data with the moviesdata.json bellow
-  
-  
-9. Download moviesdata.json file [link](src/main/resources/moviedata.json)
+  - Download moviesdata.json file [link](src/main/resources/moviedata.json)
 
 
 10. Download and run MoviesQuery class [link](src/main/java/edu/MoviesQuery.java)
