@@ -2,14 +2,17 @@
 
 ## Demo run AWS DynamoDB locally with Java.
 
-####Prerequisites:
-   AWS Account
-   
-   
-   DynamoDB [Download link](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html)
+#### Prerequisites:
+1. AWS Account
+2. DynamoDB [Download link](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html)
+
+
+===================================================================================
+
+
 
 1. Create AWS Credentials (in order to use DynamoDB, aws credentials are required).
-Log in to your aws account console.
+  - Log in to your aws account console.
   - In the search bar type IAM (Manage User Access and Encryption Keys)
   - Select "Users" from the left navigation tab.
   - If you don't have any users at the time select "Add User"
@@ -19,8 +22,8 @@ Log in to your aws account console.
   - Save the file to your home directory (MacOS /Users/<YOUR_USERNAME>/credentials)
 
 2. Configure AWS Credentials 
-Open the "credentials" with text editor.
-And format it to look like this: 
+  - Open the "credentials" with text editor.
+  - And format it to look like this: 
 ```
 [default]
 aws_access_key_id = <YOUR_ACCESS_KEY>
