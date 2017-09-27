@@ -1,7 +1,7 @@
 # AWS-DynamoDB- Java-Demo
 
 ## AWS DynamoDB running locally with Java using IntelliJ and Maven.
-This is Amazons DynamoDB demo put togheter with maven project in intelliJ. The demo performs basic operations 
+The demo performs basic operations 
 Creates table, populates table, query table and inserts new item in the table. For more information go to 
 [AWS Getting Started with DynamoDB](https://aws.amazon.com/dynamodb/getting-started/)
 
