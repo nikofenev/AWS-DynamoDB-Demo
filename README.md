@@ -68,8 +68,8 @@ aws_secret_access_key = <YOUR_SECRET_ACCESS_KEY>
      <artifactId>aws-java-sdk-dynamodb</artifactId>
    </dependency>
    ```
-   
-4. Open terminal Navigate to your DynamoDB_local_latest folred (see Prerequisites).
+4. Open terminal.
+  - Navigate to your DynamoDB_local_latest directory (see Prerequisites).
   - Type in the following command: 
   ```
   $ java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar
@@ -89,17 +89,18 @@ aws_secret_access_key = <YOUR_SECRET_ACCESS_KEY>
 
 5. In your intelliJ project click on MavenProject Lifecycle package.
 6. In your intelliJ project click on MavenProject Lifecycle install.
-7. Download and run the class MoviesCreateTable class[link](src/main/java/edu/MoviesCreateTable.java)
+7. Download and run the class MoviesCreateTable class [link](src/main/java/edu/MoviesCreateTable.java)
   - This class will create the Movies Table.
 
 8. Download and run the class MoviesLoadData class [link](src/main/java/edu/MoviesLoadData.java)
   - This class will populate the data with the moviesdata.json bellow
-9. Download moviesdata.json file [file](src/main/resources/moviesdata.json)
+9. Download moviesdata.json file [link](src/main/resources/moviesdata.json)
 10. Download and run MoviesQuery class [link](src/main/java/edu/MoviesQuery.java)
   - This class will query the data
   
-  
-  
+===========================================================================
+
+All information and code is retrieved from Amazon Web Services
   
   
   
