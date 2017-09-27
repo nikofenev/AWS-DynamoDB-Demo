@@ -19,14 +19,14 @@ public class MoviesItemOps01 {
     public static void main(String[] args) throws Exception {
 
         AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard()
-                .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration("http://localhost:8000", "us-west-2"))
+                .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration("http://localhost:8000", "us-east-2"))
                 .build();
 
         DynamoDB dynamoDB = new DynamoDB(client);
 
         Table table = dynamoDB.getTable("Movies");
 
-        int year = 2015;
+        int year = 2011;
         String title = "The Big New Movie";
 
         final Map<String, Object> infoMap = new HashMap<String, Object>();
