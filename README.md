@@ -1,6 +1,7 @@
 # AWS-DynamoDB-Demo
 
-## Demo run AWS DynamoDB locally with Java.
+## AWS DynamoDB locally with Java
+### Environment IntelliJ with Maven
 
 #### Prerequisites:
 1. AWS Account
@@ -29,6 +30,52 @@
 aws_access_key_id = <YOUR_ACCESS_KEY>
 aws_secret_access_key = <YOUR_SECRET_ACCESS_KEY>
 ```
+  - save the file and make sure there is no extension (.txt or .csv etc)
+  - open terminal and in your home directory type:
+  ```
+  $ mkdir .aws
+  $ cat credentials > .aws/credentials
+  ```
+  
+  - the lines above will create the credentials file in ".aws" directory.
 
+3. Create new IntelliJ Project
+  - in this demo I use org.apache.maven.archetype.webapp
+  - Open your pom.xml file and add the following dependencies:
+  ```
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-bom</artifactId>
+        <version>1.11.106</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  ```
+  
+  AND
+  
+  ```
+  <dependency>
+     <groupId>com.amazonaws</groupId>
+     <artifactId>aws-java-sdk-s3</artifactId>
+   </dependency>
+   <dependency>
+     <groupId>com.amazonaws</groupId>
+     <artifactId>aws-java-sdk-dynamodb</artifactId>
+   </dependency>
+   ```
+   
+  
+  
+  
+  
+  
+  
+  
+  
 
 
