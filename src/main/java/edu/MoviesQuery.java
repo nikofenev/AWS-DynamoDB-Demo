@@ -53,7 +53,7 @@ public class MoviesQuery {
 
         }
         catch (Exception e) {
-            System.err.println("Unable to query movies from 1985");
+            System.err.println("Unable to query movies from 2011");
             System.err.println(e.getMessage());
         }
     }
